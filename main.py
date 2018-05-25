@@ -16,14 +16,11 @@ running = True
 def fleche(position1, position2, position3):
     triangle = pygame.draw.polygon(screen, YELLOW,(position1, position2, position3), 6)
 
-bgrd_menu1=pygame.image.load("FOND_menu_play.png")
+bgrd_menu1=pygame.image.load(path.join(path.join(path.dirname(__file__), 'img'), "FOND_menu_play.png"))
 screen.blit(bgrd_menu1, (0,0))
 pygame.display.flip()
 
-son = pygame.mixer.Sound('X.wav')
-son.play(loops=-1, maxtime=0, fade_ms=0)
-
-bgrdmenu1=pygame.image.load("FOND_perso.png")
+bgrdmenu1=pygame.image.load(path.join(path.join(path.dirname(__file__), 'img'), "FOND_perso.png"))
 
 menu_entre=True
 menu_perso=False
