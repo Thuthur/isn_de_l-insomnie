@@ -60,7 +60,7 @@ class SinglePlayer():
         all_sprites.add(self.final_mob)
 
         self.Levels=["level1.txt"]
-        self.world = Level_builder(random.choice(self.Levels), "", "platform.png", "platform.png", "platform.png", "trap.png" )
+        self.world = Level_builder(random.choice(self.Levels), "platform.png", "platform.png", "trap.png" )
         self.world.build_level()
 
         self.TIR_AUTO = pygame.USEREVENT
